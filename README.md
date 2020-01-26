@@ -210,6 +210,7 @@ that config.
 - [leanls](#leanls)
 - [metals](#metals)
 - [ocamlls](#ocamlls)
+- [phpls](#phpls)
 - [pyls](#pyls)
 - [pyls_ms](#pyls_ms)
 - [rls](#rls)
@@ -1442,6 +1443,20 @@ require'nvim_lsp'.ocamlls.setup{}
     filetypes = { "ocaml", "reason" }
     log_level = 2
     root_dir = root_pattern(".merlin", "package.json")
+    settings = {}
+```
+
+## phpls
+
+
+```lua
+require'nvim_lsp'.phpls.setup{}
+
+  Default Values:
+    cmd = { "/Users/mphillips2/Code/language-server/bin/wrapper.sh" }
+    filetypes = { "php" }
+    log_level = 2
+    root_dir = <function 1>
     settings = {}
 ```
 
